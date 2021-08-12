@@ -1,0 +1,47 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: rgb(126, 78, 160);
+  font-size: 45px;
+  font-weight: 100;
+}
+
+.btn {
+  background-color: rgb(126, 78, 160);
+  border: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  color: rgb(175, 119, 215);
+  font-size: 12px;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 2px solid rgb(126, 78, 160);
+  border-radius: 10px;
+  background-color: rgb(241, 237, 244);
+}
+
+small {
+  color: rgb(126, 78, 160);
+  font-size: 10px;
+}
+
+small a {
+  color: rgb(63, 14, 97);
+}

@@ -15,47 +15,55 @@
     <title>Vanilla Weather Final Project</title>
   </head>
   <body>
-    <h1>Weather Final Project</h1>
     <div class="container">
-      <div class="weather-app">
-        <form id="search-form" class="mb-3">
-          <div class="row">
-            <div class="col-8">
-              <input
-                type="search"
-                placeholder="Enter the City.."
-                class="form-control"
-              />
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-8">
+                <input
+                  type="search"
+                  placeholder="Enter the City.."
+                  class="form-control"
+                />
+              </div>
+              <div class="col-4">
+                <input type="submit" class="btn btn-primary" value="Search" />
+              </div>
             </div>
-            <div class="col-4">
-              <input type="submit" class="btn btn-primary" value="Search" />
-            </div>
-          </div>
-        </form>
-        <div class="overview">
-          <h1 id="city">Palm Beach</h1>
-          <ul>
-            <li>
-              Updated at:
-              <span id="date">Thursday 3:33pm</span>
-            </li>
-            <li id="description">Today: Sunny</li>
-          </ul>
-          <div class="row">
-            <div class="col-6">
+          </form>
+          <div class="overview">
+            <h1 id="city">Palm Beach, Fl</h1>
+            <div class="display-date">
               <ul>
-                <li>Precipitation: <span id="precipitation"></span> 70%</li>
-                <li>Humidity: <span id="humidity"></span> 40%</li>
-                <li>Wind: <span id="wind"></span> 5 mph</li>
-                <li>Feels Like: <span id="feels-like"></span> Sunny</li>
+                <li>
+                  Updated at:
+                  <span id="date">Thursday 3:33pm</span>
+                </li>
+                <li id="description">Today: Sunny</li>
               </ul>
             </div>
+            <br />
+            <div class="row">
+              <div class="col-6">
+                <ul>
+                  <li>Precipitation: <span id="precipitation"></span> 70%</li>
+                  <li>Humidity: <span id="humidity"></span> 40%</li>
+                  <li>Wind: <span id="wind"></span> 5 mph</li>
+                  <li>Feels Like: <span id="feels-like"></span> Sunny</li>
+                </ul>
+              </div>
 
-            <div class="col-6">
-              <div class="clearfix">
-                <img src="#" alt="image" id="icon" />
-                <strong id="temperature">90°</strong
-                ><span class="units">°F </span>
+              <div class="col-6">
+                <div class="clearfix">
+                  <img
+                    src="https://www.weatherbit.io/static/img/icons/t01n.png"
+                    alt="image"
+                    id="icon"
+                  />
+                  <strong id="temperature">90°</strong
+                  ><span class="units">°F </span>
+                </div>
               </div>
             </div>
           </div>
@@ -65,7 +73,8 @@
             href="https://github.com/lbferrand/Vanilla-weather-final-project"
             target="_blank"
             >Open-source code</a
-          >by Luciana B Ferrand</small
+          >
+          by Luciana B Ferrand</small
         >
       </div>
     </div>
