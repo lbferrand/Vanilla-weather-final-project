@@ -1,6 +1,7 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(241, 237, 244);
 }
 
 h1 {
@@ -29,18 +30,6 @@ li::first-letter {
   text-transform: capitalize;
 }
 
-.weather-app-wrapper {
-  max-width: 600px;
-  margin: 50px auto;
-}
-
-.weather-app {
-  padding: 20px;
-  border: 2px solid rgb(126, 78, 160);
-  border-radius: 10px;
-  background-color: rgb(241, 237, 244);
-}
-
 small {
   color: rgb(126, 78, 160);
   font-size: 10px;
@@ -48,4 +37,49 @@ small {
 
 small a {
   color: rgb(63, 14, 97);
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 2px solid rgb(126, 78, 160);
+  background-color: rgb(230, 223, 235);
+  border-radius: 10px;
+}
+
+.weather-temperature img {
+  margin-left: 30px;
+  margin-right: 6px;
+  margin-bottom: 50px;
+  height: 150px;
+  width: 150px;
+}
+
+.weather-temperature strong {
+  color: rgb(126, 78, 160);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.weather-forecast {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: #000;
+}
+
+.weather-temp-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }

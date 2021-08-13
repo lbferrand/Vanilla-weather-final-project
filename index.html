@@ -20,53 +20,50 @@
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-8">
+              <div class="col-9">
                 <input
                   type="search"
                   placeholder="Enter the City.."
                   class="form-control"
+                  id="city-input"
+                  onfocus="this.value=''"
                 />
               </div>
-              <div class="col-4">
-                <input type="submit" class="btn btn-primary" value="Search" />
+              <div class="col-3">
+                <input
+                  type="submit"
+                  class="btn btn-primary w-100"
+                  value="Search"
+                />
               </div>
             </div>
           </form>
           <div class="overview">
-            <h1 id="city">Palm Beach, Fl</h1>
-            <div class="display-date">
-              <ul>
-                <li>
-                  Updated at:
-                  <span id="date">Thursday 3:33pm</span>
-                </li>
-                <li id="description">Today: Sunny</li>
-              </ul>
-            </div>
-            <br />
+            <h1 id="city"></h1>
             <div class="row">
-              <div class="col-6">
-                <ul>
+              <div class="col-4">
+                <ul class="display-date">
+                  <li>
+                    Updated at:
+                    <span id="date"></span>
+                  </li>
+                  <li id="description"></li>
+                  <br />
                   <li>Precipitation: <span id="precipitation"></span> 30%</li>
                   <li>Humidity: <span id="humidity"></span> %</li>
                   <li>Wind: <span id="wind"></span> mph</li>
                   <li>Feels Like: <span id="feels-like"></span></li>
                 </ul>
               </div>
-
-              <div class="col-6">
+              <div class="col-8">
                 <div class="clearfix weather-temperature">
-                  <img
-                    src="https://www.weatherbit.io/static/img/icons/t01n.png"
-                    alt="image"
-                    id="icon"
-                    class="float-left"
-                  />
+                  <img src="#" alt="image" id="icon" class="float-left" />
                   <strong id="temperature"> </strong
                   ><span class="units">°F </span>
                 </div>
               </div>
             </div>
+            <div class="weather-forecast" id="forecast"></div>
           </div>
         </div>
         <small
