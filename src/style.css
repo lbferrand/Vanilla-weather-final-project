@@ -39,6 +39,16 @@ small a {
   color: rgb(63, 14, 97);
 }
 
+.col-4 {
+  width: 190px;
+  height: 160px;
+}
+
+.col-8 {
+  width: auto;
+  height: 160px;
+}
+
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
@@ -51,10 +61,13 @@ small a {
   border-radius: 10px;
 }
 
+.weather-temperature {
+  height: 160px;
+}
+
 .weather-temperature img {
   margin-left: 30px;
   margin-right: 6px;
-  margin-bottom: 50px;
   height: 150px;
   width: 150px;
 }
@@ -63,7 +76,6 @@ small a {
   color: rgb(126, 78, 160);
   font-size: 64px;
   font-weight: 400;
-  line-height: 50px;
 }
 
 .weather-forecast {
